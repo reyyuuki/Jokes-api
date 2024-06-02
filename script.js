@@ -20,7 +20,6 @@ Jokebtn.addEventListener( 'click' , () =>{
     line.textContent = punchline;
     Setup.style.display = "flex";
     Punchline.style.display = "flex";
-    console.log("joke");
 });
 
 
