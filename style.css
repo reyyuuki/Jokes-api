@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color:#dad2d273;
+    font-family: "Poppins";
+}
+.Container{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width:450px;
+    height: 500px;
+    background-color:rgba(184, 142, 142, 0.125);
+    box-shadow: 12px 12px 12px rgb(0,0,0,0.1),
+    -10px -10px 10px rgba(255, 255, 255, 0.173);
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 10px 60px;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+    transition: 0.5s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.Setup,.Punchline{
+    border-radius: 40px;
+    display: none;
+    padding: 5px 60px;
+    color:black;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+    transition: 0.5s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.Jokes,.punchline{
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.Hover:hover{
+    transform: scale(1.1);
+}
+.Joke:active{
+    transform: scale(0.90);
+    transition: 0.2s ease;
+}
+.Jokes,.Punchline{
+    padding: 10px;
+    font-size: 18px;
+    color:black;
+    flex-wrap: 1;
+}
+
+@media only screen and (max-width:600px){
+
+    .Container{
+        width:90%;
+        height: 80%;
+    }
+}
