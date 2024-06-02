@@ -20,6 +20,16 @@ Jokebtn.addEventListener( 'click' , () =>{
     line.textContent = punchline;
     Setup.style.display = "flex";
     Punchline.style.display = "flex";
+    Joke.style.animation = "transformText 0.5s 1";
+    line.style.animation = "transformText 0.5s 1";
+    Setup.style.animation = "transformText 0.5s 1";
+    Punchline.style.animation = "transformText 0.5s 1";
+    setTimeout(() => {
+        Joke.style.animation = "none";
+        line.style.animation = "none";
+        Setup.style.animation = "none";
+        Punchline.style.animation = "none";
+    },500);
 });
 
 
